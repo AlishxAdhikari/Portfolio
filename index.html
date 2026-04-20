@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO: Title with full name + role + location -->
     <title>Alish Adhikari | Full Stack Developer | Kathmandu, Nepal</title>
     <meta name="description" content="Alish Adhikari is a Full Stack Developer based in Kathmandu, Nepal. Specialized in React, Django, and SQL database design. Available for freelance and full-time projects.">
     <meta name="keywords" content="Alish Adhikari, Full Stack Developer Kathmandu, React Developer Nepal, Django Developer Nepal, Alish Adhikari portfolio, software developer Nepal">
@@ -13,7 +12,6 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://alishadhikari.com.np/" />
 
-    <!-- Open Graph (for LinkedIn, Facebook, WhatsApp sharing) -->
     <meta property="og:title" content="Alish Adhikari | Full Stack Developer">
     <meta property="og:description" content="Full Stack Developer based in Kathmandu, Nepal. React, Django, and PostgreSQL specialist.">
     <meta property="og:type" content="website">
@@ -21,13 +19,11 @@
     <meta property="og:image" content="https://alishadhikari.com.np/media/profile.png">
     <meta property="og:site_name" content="Alish Adhikari Portfolio">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Alish Adhikari | Full Stack Developer">
     <meta name="twitter:description" content="Full Stack Developer based in Kathmandu, Nepal.">
     <meta name="twitter:image" content="https://alishadhikari.com.np/media/profile.png">
 
-    <!-- Schema.org Person markup — biggest Google ranking factor for name searches -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -85,7 +81,6 @@
             scroll-behavior: smooth;
         }
 
-        /* --- Navbar --- */
         .navbar {
             padding: 20px 10%;
             position: fixed; width: 100%; z-index: 1000;
@@ -108,12 +103,10 @@
 
         .navbar nav a:hover { color: var(--color-primary); }
 
-        /* --- Global Sections --- */
         section { padding: 100px 10%; }
         .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 50px; text-align: center; }
         .section-title span { color: var(--color-primary); }
 
-        /* --- Experience Section --- */
         .exp-card {
             background: white;
             border-radius: 24px;
@@ -128,7 +121,6 @@
             background: var(--gradient-main);
         }
 
-        /* --- Services --- */
         .service-card {
             background: white;
             padding: 40px;
@@ -149,6 +141,172 @@
             -webkit-text-fill-color: transparent;
             margin-bottom: 20px;
             display: inline-block;
+        }
+
+        /* --- Projects Section --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 24px;
+            border: 1px solid #f1f5f9;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 30px 60px rgba(99, 102, 241, 0.12);
+            border-color: rgba(99, 102, 241, 0.3);
+        }
+
+        .project-img-wrapper {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+            background: #f1f5f9;
+        }
+
+        .project-img-wrapper img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .project-card:hover .project-img-wrapper img {
+            transform: scale(1.06);
+        }
+
+        .project-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to bottom, transparent 40%, rgba(99, 102, 241, 0.15) 100%);
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-number {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: white;
+            color: var(--color-primary);
+            font-weight: 800;
+            font-size: 0.75rem;
+            padding: 4px 12px;
+            border-radius: 20px;
+            letter-spacing: 0.05em;
+        }
+
+        .project-body {
+            padding: 28px 30px 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+
+        .project-tag {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            padding: 4px 10px;
+            border-radius: 6px;
+            background: #eef2ff;
+            color: var(--color-primary);
+            text-transform: uppercase;
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: var(--color-text);
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .project-desc {
+            font-size: 0.9rem;
+            color: var(--color-text-dim);
+            line-height: 1.7;
+            flex: 1;
+            margin-bottom: 20px;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 12px;
+        }
+
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            text-decoration: none;
+            padding: 8px 18px;
+            border: 2px solid #eef2ff;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .project-link:hover {
+            background: var(--color-primary);
+            color: white;
+            border-color: var(--color-primary);
+        }
+
+        .project-link.primary {
+            background: var(--gradient-main);
+            color: white;
+            border-color: transparent;
+        }
+
+        .project-link.primary:hover {
+            opacity: 0.85;
+        }
+
+        /* Featured project (first one) spans full width on large screens */
+        .project-card.featured {
+            grid-column: 1 / -1;
+            flex-direction: row;
+        }
+
+        .project-card.featured .project-img-wrapper {
+            width: 45%;
+            height: auto;
+            min-height: 280px;
+            flex-shrink: 0;
+        }
+
+        @media (max-width: 768px) {
+            .project-card.featured {
+                flex-direction: column;
+            }
+            .project-card.featured .project-img-wrapper {
+                width: 100%;
+                height: 220px;
+            }
         }
 
         /* --- Sticky Scroll Skills --- */
@@ -212,7 +370,6 @@
             transition: 0.3s;
         }
 
-        /* --- Contact Section --- */
         .contact-container {
             background: white;
             border-radius: 32px;
@@ -232,7 +389,6 @@
             font-weight: 500;
         }
 
-        /* --- Footer --- */
         footer {
             background: #0f172a;
             color: white;
@@ -282,7 +438,6 @@
         <div class="row w-full items-center">
             <div class="col-lg-7" data-aos="fade-up">
                 <p class="text-indigo-600 font-bold tracking-widest uppercase text-sm mb-4">Software Developer</p>
-                <!-- h1 contains full name for Google name search -->
                 <h1 class="text-6xl font-800 leading-tight mb-6">
                     Hi, I'm <span class="text-indigo-600">Alish Adhikari</span> —<br>
                     Building the Future of <span class="text-indigo-600">Web Solutions.</span>
@@ -296,7 +451,6 @@
             <div class="col-lg-5" data-aos="fade-left">
                 <div class="mx-auto" style="max-width: 450px; background: white; border-radius: 24px; padding: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
                     <div style="width: 100%; height: 500px; border-radius: 18px; overflow: hidden; background: #f1f5f9;">
-                        <!-- SEO: descriptive alt text with full name -->
                         <img src="media/profile.png" alt="Alish Adhikari - Full Stack Developer based in Kathmandu, Nepal" style="width: 100%; height: 100%; object-fit: cover;" loading="eager">
                     </div>
                 </div>
@@ -325,8 +479,8 @@
                     Whether it's optimizing a complex SQL database or crafting a fluid React interface, my goal is always the same: <strong>Seamless Performance</strong>. I turn "what if" into "here's how."
                 </p>
                 <div class="grid grid-cols-2 gap-6 mb-8">
-                    <div class="flex items-center gap-3"><div class="icon-box !w-10 !h-10 !text-sm"><i class="fas fa-rocket"></i></div> <span class="font-bold">Fast Deployment</span></div>
-                    <div class="flex items-center gap-3"><div class="icon-box !w-10 !h-10 !text-sm"><i class="fas fa-layer-group"></i></div> <span class="font-bold">Scalable Code</span></div>
+                    <div class="flex items-center gap-3"><span class="font-bold">Fast Deployment</span></div>
+                    <div class="flex items-center gap-3"><span class="font-bold">Scalable Code</span></div>
                 </div>
                 <a href="#contact" class="text-indigo-600 font-extrabold no-underline flex items-center gap-2 hover:gap-4 transition-all">
                     LET'S WORK TOGETHER <i class="fas fa-arrow-right"></i>
@@ -421,6 +575,112 @@
         </div>
     </section>
 
+    <!-- PROJECTS SECTION -->
+    <section id="projects" aria-label="Projects by Alish Adhikari">
+        <div data-aos="fade-up" style="text-align: center; margin-bottom: 60px;">
+            <p class="text-indigo-600 font-bold tracking-widest uppercase text-sm mb-3">Selected Work</p>
+            <h2 class="section-title" style="margin-bottom: 0;">Featured <span>Projects</span></h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1: ZappStore — Featured (full width) -->
+            <article class="project-card featured" data-aos="fade-up" aria-label="ZappStore ecommerce project">
+                <div class="project-img-wrapper">
+                    <img src="media/project1.png" alt="ZappStore - Full Stack Ecommerce Web Application" loading="lazy">
+                    <div class="project-overlay"></div>
+                    <span class="project-number">01 — FEATURED</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">Tailwind</span>
+                        <span class="project-tag">PostgreSQL</span>
+                    </div>
+                    <h3 class="project-title">ZappStore — E-Commerce Platform</h3>
+                    <p class="project-desc">
+                        A fully functional ecommerce web app with product listing, cart management, order tracking, and an admin dashboard. Features secure checkout flow, product search with filters, and inventory management.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/AlishxAdhikari/E-commerce-web" class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2: Expense Tracker -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="100" aria-label="Expense Tracker project">
+                <div class="project-img-wrapper">
+                    <img src="media/project2.png" alt="Expense Tracker web application with analytics dashboard" loading="lazy">
+                    <div class="project-overlay"></div>
+                    <span class="project-number">02</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">SQL</span>
+                    </div>
+                    <h3 class="project-title">Expense Tracker</h3>
+                    <p class="project-desc">
+                        A personal finance app for tracking income and expenses with category breakdowns, monthly reports, and visual analytics charts. Includes budget goal setting and CSV export.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/AlishxAdhikari/Expenses-Tracker" class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3: LMS -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="150" aria-label="Learning Management System project">
+                <div class="project-img-wrapper">
+                    <img src="media/project3.png" alt="Learning Management System - Full Stack LMS built with React and Django" loading="lazy">
+                    <div class="project-overlay"></div>
+                    <span class="project-number">03</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">REST API</span>
+                    </div>
+                    <h3 class="project-title">Learning Management System (LMS)</h3>
+                    <p class="project-desc">
+                        A full-featured LMS platform enabling instructors to create and manage courses, assignments, and student progress. Features role-based access control, video content delivery, quiz modules, and real-time grade tracking.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4: Library Management System -->
+            <article class="project-card" data-aos="fade-up" data-aos-delay="200" aria-label="Library Management System project">
+                <div class="project-img-wrapper">
+                    <img src="media/project4.png" alt="Library Management System with book tracking and member management" loading="lazy">
+                    <div class="project-overlay"></div>
+                    <span class="project-number">04</span>
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">SQL Server</span>
+                    </div>
+                    <h3 class="project-title">Library Management System</h3>
+                    <p class="project-desc">
+                        A complete library management solution covering book cataloguing, member registration, borrow/return tracking, and overdue fine calculation. Admin panel for real-time inventory and report generation.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/AlishxAdhikari/Library-Management-System" class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
     <!-- CONTACT SECTION -->
     <section id="contact" aria-label="Contact Alish Adhikari">
         <div class="contact-container" data-aos="fade-up">
@@ -463,11 +723,10 @@
                 <div class="footer-logo">Alish Adhikari</div>
                 <p class="text-slate-400 mb-4">Full Stack Developer based in Kathmandu, Nepal. Dedicated to crafting beautiful and functional digital experiences.</p>
                 <div class="flex">
-                    <!-- ✅ Replace # with your real profile URLs -->
-                    <a href="https://github.com/yourusername" class="social-circle" aria-label="Alish Adhikari on GitHub" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://instagram.com/yourusername" class="social-circle" aria-label="Alish Adhikari on Instagram" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://facebook.com/yourusername" class="social-circle" aria-label="Alish Adhikari on Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://linkedin.com/in/yourusername" class="social-circle" aria-label="Alish Adhikari on LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AlishxAdhikari" class="social-circle" aria-label="Alish Adhikari on GitHub" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/umm__alish/" class="social-circle" aria-label="Alish Adhikari on Instagram" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/baka.asta.758" class="social-circle" aria-label="Alish Adhikari on Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/alish-adhikari-ba8520340/" class="social-circle" aria-label="Alish Adhikari on LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="col-lg-2 offset-lg-1">
