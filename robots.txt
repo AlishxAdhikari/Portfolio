@@ -1,0 +1,67 @@
+# ============================================================
+#  robots.txt — Alish Adhikari Portfolio
+#  Domain: https://www.alishadhikari1.com.np/
+#  Last updated: 2026-05-23
+# ============================================================
+
+# Allow all well-behaved crawlers
+User-agent: *
+Allow: /
+
+# Block access to sensitive/internal paths
+Disallow: /media/Alish_Cv.pdf
+Disallow: /admin/
+Disallow: /api/
+Disallow: /cgi-bin/
+Disallow: /.env
+Disallow: /.git/
+
+# Allow media (images used in portfolio)
+Allow: /media/profile.png
+Allow: /media/about.jpg
+Allow: /media/project1.png
+Allow: /media/project2.png
+Allow: /media/project3.png
+Allow: /media/project4.png
+
+# Crawl-delay for polite bots
+Crawl-delay: 10
+
+# ============================================================
+#  Google-specific directives
+# ============================================================
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+User-agent: Googlebot-Image
+Allow: /media/
+Disallow: /media/Alish_Cv.pdf
+
+# ============================================================
+#  Bing/Microsoft
+# ============================================================
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 15
+
+# ============================================================
+#  Block known bad bots
+# ============================================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# ============================================================
+#  Sitemap location
+# ============================================================
+Sitemap: https://www.alishadhikari1.com.np/sitemap.xml
