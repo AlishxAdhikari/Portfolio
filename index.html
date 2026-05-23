@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Alish Adhikari | Full Stack Developer | Kathmandu, Nepal</title>
-    <meta name="description" content="Alish Adhikari is a Full Stack Developer based in Kathmandu, Nepal. Specialized in React, Django, and SQL database design. Available for freelance and full-time projects.">
-    <meta name="keywords" content="Alish Adhikari, Full Stack Developer Kathmandu, React Developer Nepal, Django Developer Nepal, Alish Adhikari portfolio, software developer Nepal">
+    <meta name="description"
+        content="Alish Adhikari is a Full Stack Developer based in Kathmandu, Nepal. Specialized in React, Django, and SQL database design. Available for freelance and full-time projects.">
+    <meta name="keywords"
+        content="Alish Adhikari, Full Stack Developer Kathmandu, React Developer Nepal, Django Developer Nepal, Alish Adhikari portfolio, software developer Nepal">
     <meta name="author" content="Alish Adhikari">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://alishadhikari.com.np/" />
 
     <meta property="og:title" content="Alish Adhikari | Full Stack Developer">
-    <meta property="og:description" content="Full Stack Developer based in Kathmandu, Nepal. React, Django, and PostgreSQL specialist.">
+    <meta property="og:description"
+        content="Full Stack Developer based in Kathmandu, Nepal. React, Django, and PostgreSQL specialist.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://alishadhikari.com.np/">
     <meta property="og:image" content="https://alishadhikari.com.np/media/profile.png">
@@ -83,7 +86,9 @@
 
         .navbar {
             padding: 20px 10%;
-            position: fixed; width: 100%; z-index: 1000;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
             transition: 0.4s;
         }
 
@@ -94,18 +99,38 @@
             border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
-        .logo { font-size: 1.6rem; font-weight: 800; color: var(--color-primary); }
-
-        .navbar nav a {
-            color: var(--color-text-dim); text-decoration: none;
-            margin: 0 15px; font-weight: 500; transition: 0.3s;
+        .logo {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--color-primary);
         }
 
-        .navbar nav a:hover { color: var(--color-primary); }
+        .navbar nav a {
+            color: var(--color-text-dim);
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
 
-        section { padding: 100px 10%; }
-        .section-title { font-size: 2.5rem; font-weight: 800; margin-bottom: 50px; text-align: center; }
-        .section-title span { color: var(--color-primary); }
+        .navbar nav a:hover {
+            color: var(--color-primary);
+        }
+
+        section {
+            padding: 100px 10%;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .section-title span {
+            color: var(--color-primary);
+        }
 
         .exp-card {
             background: white;
@@ -116,8 +141,14 @@
             position: relative;
             overflow: hidden;
         }
+
         .exp-card::before {
-            content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 4px;
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
             background: var(--gradient-main);
         }
 
@@ -129,11 +160,13 @@
             transition: all 0.3s ease;
             height: 100%;
         }
+
         .service-card:hover {
             transform: translateY(-10px);
             border-color: var(--color-primary);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.03);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
         }
+
         .service-icon {
             font-size: 2rem;
             background: var(--gradient-main);
@@ -303,6 +336,7 @@
             .project-card.featured {
                 flex-direction: column;
             }
+
             .project-card.featured .project-img-wrapper {
                 width: 100%;
                 height: 220px;
@@ -395,24 +429,54 @@
             padding: 80px 10% 30px 10%;
         }
 
-        .footer-logo { font-size: 1.8rem; font-weight: 800; margin-bottom: 20px; }
-        .footer-link { color: #94a3b8; text-decoration: none; transition: 0.3s; display: block; margin-bottom: 10px; }
-        .footer-link:hover { color: white; transform: translateX(5px); }
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .footer-link {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: 0.3s;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .footer-link:hover {
+            color: white;
+            transform: translateX(5px);
+        }
 
         .social-circle {
-            width: 45px; height: 45px;
-            background: rgba(255,255,255,0.05);
-            display: inline-flex; align-items: center; justify-content: center;
-            border-radius: 50%; color: white; margin-right: 12px;
-            transition: 0.3s; text-decoration: none;
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.05);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            color: white;
+            margin-right: 12px;
+            transition: 0.3s;
+            text-decoration: none;
         }
-        .social-circle:hover { background: var(--color-primary); transform: translateY(-5px); }
+
+        .social-circle:hover {
+            background: var(--color-primary);
+            transform: translateY(-5px);
+        }
 
         .btn-main {
             background: var(--gradient-main);
-            color: white; border: none; padding: 14px 35px;
-            border-radius: 12px; font-weight: 600; cursor: pointer;
-            text-decoration: none; display: inline-block;
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            border-radius: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
             transition: 0.3s;
         }
     </style>
@@ -442,16 +506,23 @@
                     Hi, I'm <span class="text-indigo-600">Alish Adhikari</span> —<br>
                     Building the Future of <span class="text-indigo-600">Web Solutions.</span>
                 </h1>
-                <p class="text-slate-500 text-lg mb-8 max-w-lg">Full-stack developer based in Kathmandu, Nepal. Specialized in React, Django, and high-performance database design.</p>
+                <p class="text-slate-500 text-lg mb-8 max-w-lg">Full-stack developer based in Kathmandu, Nepal.
+                    Specialized in React, Django, and high-performance database design.</p>
                 <div class="flex gap-4">
                     <a href="#contact" class="btn-main">Start a Project</a>
-                    <a href="#projects" class="px-8 py-3 rounded-xl border-2 border-slate-100 font-bold text-slate-600 hover:bg-slate-50 transition no-underline">View Works</a>
+                    <a href="#projects"
+                        class="px-8 py-3 rounded-xl border-2 border-slate-100 font-bold text-slate-600 hover:bg-slate-50 transition no-underline">View
+                        Works</a>
                 </div>
             </div>
             <div class="col-lg-5" data-aos="fade-left">
-                <div class="mx-auto" style="max-width: 450px; background: white; border-radius: 24px; padding: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
-                    <div style="width: 100%; height: 500px; border-radius: 18px; overflow: hidden; background: #f1f5f9;">
-                        <img src="media/profile.png" alt="Alish Adhikari - Full Stack Developer based in Kathmandu, Nepal" style="width: 100%; height: 100%; object-fit: cover;" loading="eager">
+                <div class="mx-auto"
+                    style="max-width: 450px; background: white; border-radius: 24px; padding: 10px; box-shadow: 0 20px 40px rgba(0,0,0,0.08);">
+                    <div
+                        style="width: 100%; height: 500px; border-radius: 18px; overflow: hidden; background: #f1f5f9;">
+                        <img src="media/profile.png"
+                            alt="Alish Adhikari - Full Stack Developer based in Kathmandu, Nepal"
+                            style="width: 100%; height: 100%; object-fit: cover;" loading="eager">
                     </div>
                 </div>
             </div>
@@ -463,7 +534,8 @@
         <div class="row align-items-center">
             <div class="col-lg-5 mb-10 lg:mb-0" data-aos="fade-right">
                 <div class="relative">
-                    <img src="media/about.jpg" class="rounded-3xl shadow-2xl w-full" alt="Alish Adhikari working on web development projects in Kathmandu" loading="lazy">
+                    <img src="media/about.jpg" class="rounded-3xl shadow-2xl w-full"
+                        alt="Alish Adhikari working on web development projects in Kathmandu" loading="lazy">
                     <div class="absolute -bottom-6 -right-6 bg-indigo-600 text-white p-6 rounded-2xl hidden md:block">
                         <h4 class="text-3xl font-bold">10+</h4>
                         <p class="text-xs uppercase font-bold opacity-80">Projects Completed</p>
@@ -473,16 +545,20 @@
             <div class="col-lg-7 lg:pl-20" data-aos="fade-up">
                 <h2 class="text-4xl font-800 mb-6">Hello, I'm <span class="text-indigo-600">Alish Adhikari.</span></h2>
                 <p class="text-slate-500 text-lg leading-relaxed mb-6">
-                    I don't just write code; I build <strong>digital ecosystems</strong>. Based in the heart of Kathmandu, I thrive at the intersection of logical backend architecture and breathtaking frontend aesthetics.
+                    I don't just write code; I build <strong>digital ecosystems</strong>. Based in the heart of
+                    Kathmandu, I thrive at the intersection of logical backend architecture and breathtaking frontend
+                    aesthetics.
                 </p>
                 <p class="text-slate-500 text-lg leading-relaxed mb-8">
-                    Whether it's optimizing a complex SQL database or crafting a fluid React interface, my goal is always the same: <strong>Seamless Performance</strong>. I turn "what if" into "here's how."
+                    Whether it's optimizing a complex SQL database or crafting a fluid React interface, my goal is
+                    always the same: <strong>Seamless Performance</strong>. I turn "what if" into "here's how."
                 </p>
                 <div class="grid grid-cols-2 gap-6 mb-8">
                     <div class="flex items-center gap-3"><span class="font-bold">Fast Deployment</span></div>
                     <div class="flex items-center gap-3"><span class="font-bold">Scalable Code</span></div>
                 </div>
-                <a href="#contact" class="text-indigo-600 font-extrabold no-underline flex items-center gap-2 hover:gap-4 transition-all">
+                <a href="#contact"
+                    class="text-indigo-600 font-extrabold no-underline flex items-center gap-2 hover:gap-4 transition-all">
                     LET'S WORK TOGETHER <i class="fas fa-arrow-right"></i>
                 </a>
             </div>
@@ -502,7 +578,8 @@
                     <span class="bg-indigo-50 text-indigo-600 px-4 py-1 rounded-full text-sm font-bold">4 Months</span>
                 </div>
                 <p class="text-slate-500 leading-relaxed">
-                    Collaborated with the development team at Ozinfo Tech. Specialized in responsive web design, digital marketing integration, and frontend optimization.
+                    Collaborated with the development team at Ozinfo Tech. Specialized in responsive web design, digital
+                    marketing integration, and frontend optimization.
                 </p>
             </div>
         </div>
@@ -555,21 +632,24 @@
                 <div class="service-card text-center">
                     <div class="service-icon"><i class="fas fa-code" aria-hidden="true"></i></div>
                     <h3 class="font-800 mb-3">Full Stack Development</h3>
-                    <p class="text-slate-500 text-sm">End-to-end development using React and Django for robust, scalable applications.</p>
+                    <p class="text-slate-500 text-sm">End-to-end development using React and Django for robust, scalable
+                        applications.</p>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="service-card text-center">
                     <div class="service-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
                     <h3 class="font-800 mb-3">Database Design</h3>
-                    <p class="text-slate-500 text-sm">Optimized SQL schema design and management for complex data structures.</p>
+                    <p class="text-slate-500 text-sm">Optimized SQL schema design and management for complex data
+                        structures.</p>
                 </div>
             </div>
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="service-card text-center">
                     <div class="service-icon"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
                     <h3 class="font-800 mb-3">Digital Marketing</h3>
-                    <p class="text-slate-500 text-sm">SEO optimization and marketing integration to grow your online presence.</p>
+                    <p class="text-slate-500 text-sm">SEO optimization and marketing integration to grow your online
+                        presence.</p>
                 </div>
             </div>
         </div>
@@ -600,10 +680,13 @@
                     </div>
                     <h3 class="project-title">ZappStore — E-Commerce Platform</h3>
                     <p class="project-desc">
-                        A fully functional ecommerce web app with product listing, cart management, order tracking, and an admin dashboard. Features secure checkout flow, product search with filters, and inventory management.
+                        A fully functional ecommerce web app with product listing, cart management, order tracking, and
+                        an admin dashboard. Features secure checkout flow, product search with filters, and inventory
+                        management.
                     </p>
                     <div class="project-links">
-                        <a href="https://github.com/AlishxAdhikari/E-commerce-web" class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
+                        <a href="https://github.com/AlishxAdhikari/E-commerce-web" class="project-link primary"><i
+                                class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
                     </div>
                 </div>
             </article>
@@ -611,7 +694,8 @@
             <!-- Project 2: Expense Tracker -->
             <article class="project-card" data-aos="fade-up" data-aos-delay="100" aria-label="Expense Tracker project">
                 <div class="project-img-wrapper">
-                    <img src="media/project2.png" alt="Expense Tracker web application with analytics dashboard" loading="lazy">
+                    <img src="media/project2.png" alt="Expense Tracker web application with analytics dashboard"
+                        loading="lazy">
                     <div class="project-overlay"></div>
                     <span class="project-number">02</span>
                 </div>
@@ -623,18 +707,22 @@
                     </div>
                     <h3 class="project-title">Expense Tracker</h3>
                     <p class="project-desc">
-                        A personal finance app for tracking income and expenses with category breakdowns, monthly reports, and visual analytics charts. Includes budget goal setting and CSV export.
+                        A personal finance app for tracking income and expenses with category breakdowns, monthly
+                        reports, and visual analytics charts. Includes budget goal setting and CSV export.
                     </p>
                     <div class="project-links">
-                        <a href="https://github.com/AlishxAdhikari/Expenses-Tracker" class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
+                        <a href="https://github.com/AlishxAdhikari/Expenses-Tracker" class="project-link primary"><i
+                                class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
                     </div>
                 </div>
             </article>
 
             <!-- Project 3: LMS -->
-            <article class="project-card" data-aos="fade-up" data-aos-delay="150" aria-label="Learning Management System project">
+            <article class="project-card" data-aos="fade-up" data-aos-delay="150"
+                aria-label="Learning Management System project">
                 <div class="project-img-wrapper">
-                    <img src="media/project3.png" alt="Learning Management System - Full Stack LMS built with React and Django" loading="lazy">
+                    <img src="media/project3.png"
+                        alt="Learning Management System - Full Stack LMS built with React and Django" loading="lazy">
                     <div class="project-overlay"></div>
                     <span class="project-number">03</span>
                 </div>
@@ -647,18 +735,23 @@
                     </div>
                     <h3 class="project-title">Learning Management System (LMS)</h3>
                     <p class="project-desc">
-                        A full-featured LMS platform enabling instructors to create and manage courses, assignments, and student progress. Features role-based access control, video content delivery, quiz modules, and real-time grade tracking.
+                        A full-featured LMS platform enabling instructors to create and manage courses, assignments, and
+                        student progress. Features role-based access control, video content delivery, quiz modules, and
+                        real-time grade tracking.
                     </p>
                     <div class="project-links">
-                        <a href="#" class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
+                        <a href="#" class="project-link primary"><i class="fab fa-github"
+                                style="font-size: 0.75rem;"></i> GitHub</a>
                     </div>
                 </div>
             </article>
 
             <!-- Project 4: Library Management System -->
-            <article class="project-card" data-aos="fade-up" data-aos-delay="200" aria-label="Library Management System project">
+            <article class="project-card" data-aos="fade-up" data-aos-delay="200"
+                aria-label="Library Management System project">
                 <div class="project-img-wrapper">
-                    <img src="media/project4.png" alt="Library Management System with book tracking and member management" loading="lazy">
+                    <img src="media/project4.png"
+                        alt="Library Management System with book tracking and member management" loading="lazy">
                     <div class="project-overlay"></div>
                     <span class="project-number">04</span>
                 </div>
@@ -670,10 +763,14 @@
                     </div>
                     <h3 class="project-title">Library Management System</h3>
                     <p class="project-desc">
-                        A complete library management solution covering book cataloguing, member registration, borrow/return tracking, and overdue fine calculation. Admin panel for real-time inventory and report generation.
+                        A complete library management solution covering book cataloguing, member registration,
+                        borrow/return tracking, and overdue fine calculation. Admin panel for real-time inventory and
+                        report generation.
                     </p>
                     <div class="project-links">
-                        <a href="https://github.com/AlishxAdhikari/Library-Management-System" class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i> GitHub</a>
+                        <a href="https://github.com/AlishxAdhikari/Library-Management-System"
+                            class="project-link primary"><i class="fab fa-github" style="font-size: 0.75rem;"></i>
+                            GitHub</a>
                     </div>
                 </div>
             </article>
@@ -687,29 +784,45 @@
             <div class="row">
                 <div class="col-lg-5 mb-12 lg:mb-0">
                     <h2 class="text-5xl font-800 mb-6">Let's <span class="text-indigo-600">Talk.</span></h2>
-                    <p class="text-slate-500 text-lg mb-10">Have a project in mind? Let's build something amazing together.</p>
+                    <p class="text-slate-500 text-lg mb-10">Have a project in mind? Let's build something amazing
+                        together.</p>
                     <address style="font-style: normal;">
                         <p class="font-bold mb-1">Kathmandu, Nepal</p>
-                        <a href="mailto:alish@adhikari.dev" class="text-indigo-600 font-bold" style="text-decoration: none;">alish@adhikari.dev</a>
+                        <a href="mailto:alish@adhikari.dev" class="text-indigo-600 font-bold"
+                            style="text-decoration: none;">alish@adhikari.dev</a>
                     </address>
                 </div>
                 <div class="col-lg-7">
-                    <form class="row g-4" action="#" method="POST" aria-label="Contact form">
+                    <form class="row g-4" action="https://api.web3forms.com/submit" method="POST"
+                        aria-label="Contact form">
+
+                        <!-- Web3Forms Access Key -->
+                        <input type="hidden" name="access_key" value="cc8175c2-0f7d-43da-aba8-646fd6e3d861">
+
                         <div class="col-md-6">
                             <label for="contact-name" class="visually-hidden">Your Name</label>
-                            <input id="contact-name" type="text" name="name" class="form-control-custom" placeholder="Name" required>
+                            <input id="contact-name" type="text" name="name" class="form-control-custom"
+                                placeholder="Name" required>
                         </div>
+
                         <div class="col-md-6">
                             <label for="contact-email" class="visually-hidden">Your Email</label>
-                            <input id="contact-email" type="email" name="email" class="form-control-custom" placeholder="Email" required>
+                            <input id="contact-email" type="email" name="email" class="form-control-custom"
+                                placeholder="Email" required>
                         </div>
+
                         <div class="col-12">
                             <label for="contact-message" class="visually-hidden">Your Message</label>
-                            <textarea id="contact-message" name="message" class="form-control-custom" rows="4" placeholder="Your Message" required></textarea>
+                            <textarea id="contact-message" name="message" class="form-control-custom" rows="4"
+                                placeholder="Your Message" required></textarea>
                         </div>
+
                         <div class="col-12">
-                            <button type="submit" class="btn-main w-full py-4">Send Message</button>
+                            <button type="submit" class="btn-main w-full py-4">
+                                Send Message
+                            </button>
                         </div>
+
                     </form>
                 </div>
             </div>
@@ -721,12 +834,21 @@
         <div class="row g-5">
             <div class="col-lg-4">
                 <div class="footer-logo">Alish Adhikari</div>
-                <p class="text-slate-400 mb-4">Full Stack Developer based in Kathmandu, Nepal. Dedicated to crafting beautiful and functional digital experiences.</p>
+                <p class="text-slate-400 mb-4">Full Stack Developer based in Kathmandu, Nepal. Dedicated to crafting
+                    beautiful and functional digital experiences.</p>
                 <div class="flex">
-                    <a href="https://github.com/AlishxAdhikari" class="social-circle" aria-label="Alish Adhikari on GitHub" rel="noopener noreferrer" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/umm__alish/" class="social-circle" aria-label="Alish Adhikari on Instagram" rel="noopener noreferrer" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/baka.asta.758" class="social-circle" aria-label="Alish Adhikari on Facebook" rel="noopener noreferrer" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.linkedin.com/in/alish-adhikari-ba8520340/" class="social-circle" aria-label="Alish Adhikari on LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AlishxAdhikari" class="social-circle"
+                        aria-label="Alish Adhikari on GitHub" rel="noopener noreferrer" target="_blank"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/umm__alish/" class="social-circle"
+                        aria-label="Alish Adhikari on Instagram" rel="noopener noreferrer" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/baka.asta.758" class="social-circle"
+                        aria-label="Alish Adhikari on Facebook" rel="noopener noreferrer" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.linkedin.com/in/alish-adhikari-ba8520340/" class="social-circle"
+                        aria-label="Alish Adhikari on LinkedIn" rel="noopener noreferrer" target="_blank"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
             <div class="col-lg-2 offset-lg-1">
@@ -776,11 +898,12 @@
 
         skillBlocks.forEach(block => skillObserver.observe(block));
 
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const nav = document.querySelector('.navbar');
             if (window.scrollY > 50) nav.classList.add('scrolled');
             else nav.classList.remove('scrolled');
         });
     </script>
 </body>
+
 </html>
